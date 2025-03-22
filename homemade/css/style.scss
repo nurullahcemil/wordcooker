@@ -1,0 +1,133 @@
+@keyframes shake {
+  10% {left: 0}
+  20% {left: -5px}
+  30% {left: 5px}
+  40% {left: -5px}
+  50% {left: 10px}
+  60% {left: -5px}
+  70% {left: 5px}
+  100% {left: 0}
+}
+
+.shakeAnimation {
+	position:relative;
+   animation: shake 1s infinite;
+   animation-iteration-count:1;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	// background:floralwhite;
+	overflow:hidden;
+	padding:30px;
+	text-align:center;
+}
+button:focus {outline:0;}
+a{
+	text-decoration:none;
+	color:black;
+	cursor:pointer;
+}
+.whiteImp{
+	a{
+		color:white !important;
+	}
+	
+}
+
+
+
+.generatedWord{
+	width: 44%;
+	margin:3px;
+	float:left;
+	.alphabet{
+		font-size:80px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		word-break: break-word;
+		line-height:80px;
+	}
+}
+#generatedWord a{
+	    cursor:pointer;
+}
+#generatedWord::first-letter{
+	/*text-transform:Uppercase;*/
+}
+
+
+
+.generateBtn{
+	position: absolute;
+	        bottom: 30px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    background: #6468E6;
+	    padding: 16px 30px;
+	    font-size: 24px;
+	    border: 0;
+	    border-radius: 50px;
+	    color: white;
+	    /*  -webkit-box-shadow: 10px 10px 62px -11px rgba(0,0,0,0.75);*/
+	    /*  -moz-box-shadow: 10px 10px 62px -11px rgba(0,0,0,0.75);*/
+	    box-shadow: 10px 10px 60px -5px rgba(57,62,208,0.20);
+	    transition: all 0.1s ease-in;
+	    cursor:pointer;
+}
+@media only screen and (max-width: 600px) {
+  .generateBtn {
+    width: 80%;
+    bottom: 15%;
+  }
+}
+
+.generateBtn:hover{
+	background:#393ED0;
+	box-shadow: 10px 10px 60px -5px rgba(57,62,208,0.30);
+}
+.uppercase{
+	text-transform:uppercase;
+}
+.lowercase{
+	text-transform:lowercase;
+}
+.capitalize{
+	text-transform:capitalize;
+}
+
+
+.randomImg{
+}
+
+.downloadImg{
+	position: absolute;
+	top: 3000px;
+	height: 3300px;
+	width: 2200px;
+	z-index: -9;
+	.generatedWord{
+		.alphabet{
+			font-size:200px;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			word-break: break-word;
+			line-height:220px;
+		}
+	}
+	
+}
+
+.randomImg2{
+	margin-top:100px;
+	width: 1100px;
+}
+
+.fontName{
+	font-size: 24px;
+	    font-family: sans-serif;
+	    margin-bottom: 30px;
+	    margin-top: 30px;
+}

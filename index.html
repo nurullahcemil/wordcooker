@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Word Cooker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="mainBody">
+	<div class="logo"><img src="img/logo.svg" alt="word cooker logo"></div>
+	<div class="left-icons">
+		<div class="descender active"><img src="img/descender.svg" alt="descender"></div>
+		<div class="ascender active"><img src="img/ascender.svg" alt="ascender"></div>
+		<div class="ligatures active"><img src="img/ligature.svg" alt="ligature"></div>
+
+	</div>
+
+	<div class="right-icons">
+		<div class="rightIcon uppercaseBtn"><img src="img/uppercase.svg" alt="uppercase"></div>
+		<div class="rightIcon usiBtn"><img src="img/usi.svg" alt="usi"></div>
+		<div class="rightIcon lowercaseBtn"><img src="img/lowercase.svg" alt="lowercase"></div>
+		<a href="TypeCookerTemplate.pdf" download><div class="download"><img src="img/download.svg" alt="download"><div class="downloadText">Download Cooker Template by MO</div></div></a>
+	</div>
+	<div class="wordCookerContainer">
+		<h1 id="generatedWord">WordCooker</h1>
+		<div class="gameContainer">
+			<div class="subText">Do you know what was Mo's Emoji?</div>
+			<div class="emojiContainer">
+				<a class="wrongAnswer">&#127890;</a>
+				<a onclick="wordAnimation()"></a>
+				<a class="wrongAnswer">&#129648;</a>
+				<a class="wrongAnswer">&#129345;</a>
+			</div>
+		</div>
+	</div>
+	<div class="selected-word-container">
+		<h2 class="your-word-title">Your word is</h2>
+		<div class="selected-word-bottom-container">
+			<div class="selected-word-left">
+				<!-- <a style="background:#6663E6" onclick="randomColor('#6663E6')"></a>
+				<a style="background:#ce8054" onclick="randomColor('#ce8054')"></a>
+				<a style="background:#b35340" onclick="randomColor('#b35340')"></a>
+				<a style="background:#6f3637" onclick="randomColor('#6f3637')"></a>
+				<a style="background:#233342" onclick="randomColor('#233342')"></a>
+				<a style="background:#4b2b31" onclick="randomColor('#4b2b31')"></a> -->
+				<a style="background:#6663E6" onclick="randomColor('#6663E6')"></a>
+				<a style="background:#043E42" onclick="randomColor('#043E42')"></a>
+				<a style="background:#1D5B54" onclick="randomColor('#1D5B54')"></a>
+				<a style="background:#B71B4F" onclick="randomColor('#B71B4F')"></a>
+
+				<a style="background:#E5524E" onclick="randomColor('#E5524E')"></a>
+				<a style="background:#FECE00" onclick="randomColor('#FECE00')"></a>
+
+				<a style="background:#FBCFCF" onclick="randomColor('#FBCFCF')"></a>
+			</div>
+			<div class="selected-word-main">
+				<div class="selected-word">قمر</div>
+				<div class="selected-word-meaning">moon</div>
+				<div class="selected-language">Arabic</div>
+			</div>
+			<div class="selected-word-main hiddenword">
+				<div class="selected-word">قمر</div>
+				<div class="selected-word-meaning">moon</div>
+				<div class="selected-language">Arabic</div>
+				<!-- <canvas id="selected-emoji"></canvas> -->
+			</div>
+			<div class="selected-word-right">
+				<a id="btnSave"><img src="img/download.svg" alt="download" title="Download the image for Instagram"></a>
+			</div>
+		</div>
+	</div>
+	<button class="generateBtn" onclick="wordGenerator()">Generate a Word</button>
+	<footer>
+		<div class="footerIconContainer">
+			<a target="_blank" href="http://typecooker.com/"><img src="img/cooker.svg" alt=""></a>
+			<a target="_blank" href="https://www.instagram.com/typecookerwest/"><img src="img/instagram.svg" alt=""></a>
+			<a class="grendlMode"><img src="img/skull.svg" alt=""></a>
+		</div>
+	</footer>
+</body>
+<script src="js/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <script src="js/canvas2image.js"></script>
+<script src="app2.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154376711-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154376711-3');
+</script>
+
+</html>

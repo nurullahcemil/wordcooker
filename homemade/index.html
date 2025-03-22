@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cookie Cooker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	
+	<div class="wordCookerContainer">
+		<div class="generatedWord">
+			<div class="fontName"></div>
+			<p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+         	<p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+		</div>
+		<img style="max-height: 43vh; margin-top:50px" class="randomImg" src="" alt="">
+		<a id="btnSave"><img src="img/download.svg" alt="download"></a>
+	</div>
+	
+	<button class="generateBtn" onclick="wordGenerator()">Random Combination</button>
+	<div class="downloadImg">
+				<div class="generatedWord">
+					<div class="fontName"></div>
+					<p class="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+		         	<p class="alphabet">abcdefghijklmnopqrstuvwxyz</p>
+				</div>
+				<img class="randomImg2" src="" alt="">
+	</div>
+</body>
+<script src="js/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <script src="js/canvas2image.js"></script>
+  
+<script src="app2.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154376711-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154376711-4');
+</script>
+</html>

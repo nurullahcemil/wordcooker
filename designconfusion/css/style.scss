@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+// Colors
+
+$system-color: #1A222B;
+$light-grey : #D6D6D6;
+$slight-white: #f8f8f8;
+$lightest-grey: #EBEBEB;
+$light-orange : #FFF4E6;
+$orange:#F76707;
+$purple: #4263EB;
+header{
+	width:90%;
+	max-width:1200px;
+	margin:auto;
+	height:130px;
+	.logo{
+		float:left;
+		margin-top:35px;
+		img{
+			width:150px;
+		}
+		
+	}
+	nav{
+		float:right;
+		ul{
+			li{
+				float:left;
+				margin-left:30px;
+				line-height:130px;
+				a{
+					color: $system-color;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+
+p{
+	color: white;
+	font-size:16px;
+	line-height:23px;
+}
+
+.cta{
+	width:140px;
+	height:60px;
+	text-align:center;
+	line-height:60px;
+	border-radius:10px;
+	background:#4263EB;
+	margin-top: 30px;
+	a{
+		color:white;
+		text-decoration:none;
+	}
+}
+.container{
+	min-height:1px;
+	width:90%;
+	max-width:1200px;
+	margin:auto;
+	h1, h2, h3{
+		font-size:52px;
+		line-height:60px;
+		font-weight:600;
+	}
+}
+
+.space{
+	height:100px;
+	width:100%;
+	text-align:center;
+	img{
+		width:60%;
+		margin-top:50px;
+	}
+}
+.space-sm{
+	height:40px;
+	width:100%;
+}
+
+.full-container{
+	width:100%;
+	text-align:center;
+	h2{
+		font-size:36px;
+		text-align:center;
+		margin-bottom: 70px;
+		font-weight:600;
+	}
+	img.teaching-img{
+		width:97%;
+		float:left;
+		display:inline-block;
+		margin-bottom: 40px;
+	}
+	.teaching-process{
+		width:100%;
+		display:flex;
+		justify-content:space-around;
+		.try{
+			background:$lightest-grey;;
+			color:$system-color;
+			border-radius:30px;
+			padding:10px 30px;
+			position:relative;
+			left:50px;
+		}
+		.fail{
+			background:$lightest-grey;;
+			color:$system-color;
+			border-radius:30px;
+			padding:10px 30px;
+			position:relative;
+			left:-30px;
+		}
+		.fix{
+			background:$system-color;
+			color:white;
+			border-radius:30px;
+			padding:10px 30px;
+			position:relative;
+			left:-100px;
+		}
+	}
+}
+.centered-container{
+	text-align:center;
+	p.sub-description{
+		width:60%;
+		color:$system-color;
+		margin:auto;
+		margin-top:20px;
+		display:block;
+	}
+	.curriculum-drop-downs{
+		width:70%;
+		margin:auto;
+		margin-top:30px;
+		.week{
+			border:1px solid #E3E3E3;
+			border-radius:20px;
+			display: inline-block;
+		    width: 80%;
+		    padding-bottom: 17px;
+		    margin-bottom:10px;
+			.arrow{
+				float:left;
+				width:60px;
+				height:40px;
+				margin-top:15px;
+				img{
+					width:40px;
+				}
+			}
+			.week-group{
+				float:left;
+				text-align:left;
+				.week-count{
+					color: #B8B8B8;
+					font-size:14px;
+					margin-top:15px;
+					margin-bottom:8px;
+				}
+			}
+			.week-tag{
+				.tag-container{
+					margin-top:20px;
+					font-size:14px;
+				}
+				.tag{
+					float:right;
+					margin-bottom:0;
+					margin-right:15px;
+					padding:7px 12px;
+				}
+				.grey-tag{
+					background: $slight-white;
+					color: #595959;
+				}
+				
+			}
+		}
+	}
+	.faq{
+		.week-topic{
+			margin-top: 29px;
+		}
+	}
+}
+.tag-container{
+	margin-top:20px;
+	font-size:16px;
+	font-weight:400;
+	.tag{
+		border-radius:30px;
+		display:inline-block;
+		padding:10px 20px;
+		margin-bottom:20px;
+		margin-right:10px;
+	}
+	.orange-tag{
+		background:$light-orange;
+		color:$orange;
+	}
+	.white-tag{
+		background:white;
+		color:$system-color;
+	}
+	.black-tag{
+		background:$system-color;
+		color:white;
+	}
+	.grey-tag{
+		background:$lightest-grey;
+		color:$system-color;
+	}
+	.purple-tag{
+		background:$purple;
+		color:white;
+	}
+}
+
+.box{
+	width:100%;
+	display:inline-block;
+	padding:60px;
+	box-sizing: border-box;
+	border-radius:30px;
+}
+
+.black-box{
+	background: $system-color;
+	color: $light-grey; 
+}
+
+.purple-box{
+	background: $purple;
+	color: $light-grey; 
+}
+.empty-box{
+	.left{
+		h2{
+			margin-top:50px;
+			color: $system-color;
+		}
+	}
+	.right{
+		img{
+			width: 90%;
+			float:right;
+		}
+	}
+	
+}
+.light-orange-box{
+	background:$light-orange;
+	.left{
+		h3{
+			color:$orange;
+		}
+	}
+	p{
+		color:$orange;
+	}
+	a{
+		color:$orange;
+	}
+}
+.light-grey-box{
+	background:$slight-white;
+	.left{
+		h3{
+			color:$system-color;
+		}
+	}
+	p{
+		color:$system-color;
+	}
+	a{
+		color:$system-color;
+	}
+}
+.left{
+	float:left;
+	width:40%;
+	color:white;
+	font-weight:600;
+	.left-img{
+		width: 220px;
+    	margin-top: 30px;
+	}
+}
+.right{
+	float:right;
+	width:55%;
+}
+
+
+
