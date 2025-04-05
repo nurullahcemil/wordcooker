@@ -50,7 +50,25 @@ $('.lowercaseBtn').click(function(){
   $('#generatedWord').removeClass('capitalize');
 });
 
-var words = new Array();
+var words = [];
+var wordlistLoaded = false;
+
+// Load wordlist using fetch
+fetch('/wordlist3.txt')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text();
+  })
+  .then(data => {
+    words = data.split('\n').filter(word => word.trim() !== '');
+    wordlistLoaded = true;
+    console.log('Wordlist loaded successfully. Number of words:', words.length);
+  })
+  .catch(error => {
+    console.error('Error loading wordlist:', error);
+  });
 
 $( ".ascender" ).click(function() {
   
@@ -70,6 +88,9 @@ $( ".ligatures" ).click(function() {
 
 jQuery.get('wordlist.txt', function(data) {
    words = data.split('\n');
+   console.log('Wordlist loaded successfully. Number of words:', words.length);
+}).fail(function(jqXHR, textStatus, errorThrown) {
+   console.error('Error loading wordlist:', textStatus, errorThrown);
 });
 
 
@@ -80,6 +101,11 @@ function pressedKey(words) {
 }
 
 function wordGenerator() {
+  console.log('Current words array length:', words.length);
+  if (!words || words.length === 0) {
+    console.error('Words array is empty or not loaded yet');
+    return;
+  }
   var ascendersEx = /(?=^(?:(?!b|d|h|l|t|k|f|i|j).)*$)/;
   var sub = /.*$/;
   var descenders = /^(?=^(j|p|q|y|g))/;
